@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: black;
+    background-color: white;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    position: sticky;
+    top: 0;
+    background: blueviolet;
+    border-bottom: 1px solid lightgray;
+    z-index: 1000;
+    border-radius: 80
+    px;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+.logo img{
+    width:124px;
+    height:38px;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Global Section Style */
+section {
+    padding: 100px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 0 auto 32px;
+    display: block;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+}
+
+/* Home Section */
+#home {
+    padding: 160px 32px;
+}
+
+#home .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px lightgray;
+}
+
+#home h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: blueviolet;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    font-size: 45px;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#home p {
+    font-size: 18px;
+    color: gray;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: blueviolet;
+}
+
+
+.btn2{
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.btn2:hover{
+    background: blueviolet;
+    box-shadow: 0 5px 15px lightgray;
+}
+
+/* About Section */
+.card-about {
+    padding: 0;
+}
+
+.card-about p {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: gray;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: blueviolet;
+    transform: translateY(-3px);
+}
+
+.social-links i {
+    font-size: 24px;
+}
+
+/* Skills/Projects Grid */
+.skills-grid, .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.skill-card, .project-card {
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.skill-card:hover, .project-card:hover {
+    border-color: blueviolet;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.skill-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: gray;
+    font-size: 15px;
+}
+span{
+    color: blueviolet;
+}
+
+/* Contact Section */
+.contact-info .card {
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    padding: 60px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.contact-info .card:hover{
+    background: white;
+}
+.contact-item { margin-bottom: 30px; }
+.contact-item h3 { font-size: 14px; color: blueviolet; }
+.contact-item p { font-size: 20px; color: black; }
+
+/* Footer */
+footer {
+    padding: 50px 30px;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Responsive */
+/* Mobile */
+@media (max-width: 768px) {
+    nav { flex-direction: column; gap: 20px; }
+    #home .content { flex-direction: column-reverse; text-align: center; }
+    .profile-img { width: 150px; height: 150px; margin-bottom: 30px; }
+    .social-links { justify-content: center; }
+}
